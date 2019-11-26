@@ -5,6 +5,8 @@
  */
 
 import com.progmatic.labyrinthproject.Coordinate;
+import com.progmatic.labyrinthproject.LabyrinthImpl;
+import com.progmatic.labyrinthproject.Players.*;
 import com.progmatic.labyrinthproject.enums.CellType;
 import com.progmatic.labyrinthproject.enums.Direction;
 import com.progmatic.labyrinthproject.exceptions.CellException;
@@ -380,19 +382,20 @@ public class LabyrinthTest {
         return l;
     }
     
-    // TODO
     private Labyrinth getLabyrinthImpl() {
-        return null;
+        Labyrinth laby = new LabyrinthImpl();
+        return laby;
     }
     
-    // TODO
     private Player getRandomPlayerImpl() {
-        return null;
+        Player random = new RandomPlayer();
+        return random;
     }
     
     // TODO
     private Player getWallFollowerPlayerImpl() {
-        return null;
+        Player wallFollower = new WallFollowerPlayer();
+        return wallFollower;
     }
     
     // TODO
